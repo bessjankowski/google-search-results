@@ -5,24 +5,20 @@
 </head>
 
 <body>
-
-	<center>
-		<div id="top">
-			<ul>
-				<li class="top-left"><img src="https://www.google.com/images/srpr/logo11w.png"></li>
-				<li class="top-left">
-					<form id="search" action="search-results.php" method="post">
-						<input id="textfield" type="text" name="search-terms">
-						<input id="search-button" type="submit" value="mg">
-					</form>
-				</li>
-			</ul>
-			<ul>
-				<li id="sign-in" class="top-right">Sign In</li>
-				<li class="top-right"><img src="tiny-grid.png"></li>
-			</ul>
-		</div>
-	</center>
+	<div id="top">
+		<ul id="top-left">
+			<form action="search-results.php" method="post">
+				<li id="logo"><img src="https://www.google.com/images/srpr/logo11w.png"></li>
+				<li><input id="textfield" type="text" name="search-terms"></li>
+				<li><input id="search-button" type="image" src="magnifying-glass.png"></li>
+			</form>
+		</ul>	
+		
+		<ul id="top-right">
+			<li id="sign-in">Sign In</li>
+			<li><img src="tiny-grid.png"></li>
+		</ul>
+	</div>
 
 	<div id="menu-container">
 		<div id="menu">
@@ -36,7 +32,7 @@
 				<li class="menu-list">Search tools</li>
 			</ul>
 			<ul>
-				<li class="menu-right">gear icon</li>
+				<li class="menu-right"><img src="settings-gear.png"></li>
 			</ul>
 		</div>
 	</div>
@@ -108,14 +104,19 @@
 					</table>
 			</div><!-- end div related-searches -->
 			
-			<div id="bottom-page-nav">bottom page nav</div><!-- end div bottom-page-nav -->
+			<center><div id="bottom-page-nav"><img src="results-paging.png"></div></center><!-- end div bottom-page-nav -->
 	</div><!-- end div results-container -->
 		
 
 
 	<div id="bottom-menu">
-		<p>Washington, DC - From your Internet address - Use precise location - Learn more</p>
-		<p>Help Send feedback Privacy Terms</p>
+		<p>&bull; Washington, DC - From your Internet address - Use precise location - Learn more</p>
+		<ul id="bottom-menu-list">
+			<li>Help</li> 
+			<li>Send feedback</li> 
+			<li>Privacy</li>
+			<li>Terms</li>
+		</ul>
 	</div>
 </body>
 </html>
